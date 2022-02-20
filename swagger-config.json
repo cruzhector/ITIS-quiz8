@@ -15,7 +15,7 @@
 
     "servers": [
       {
-        "url": "http://localhost:3000",
+        "url": "http://178.128.155.211:3000/",
         "description": "Swagger Express API Documentation"
       }
     ]

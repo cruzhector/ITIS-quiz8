@@ -202,7 +202,7 @@ app.post("/company", companyRegValidation, (req, res) => {
  *             schema:
  *               type: object
  *       500:
- *         description: Could not register
+ *         description: Could not get companies
  */
 app.get("/companies", (req, res) => {
   getConnection()
@@ -267,7 +267,7 @@ app.get("/companies", (req, res) => {
  *             schema:
  *               type: object
  *       500:
- *         description: Could not register
+ *         description: Could not get company
  */
 app.put("/company/:id", companyUpdateValidation, (req, res) => {
   const errors = validationResult(req);
@@ -333,7 +333,7 @@ app.put("/company/:id", companyUpdateValidation, (req, res) => {
  *             schema:
  *               type: object
  *       500:
- *         description: Could not register
+ *         description: Could not update name
  */
 app.patch("/company", companyNameValidation, (req, res) => {
   const errors = validationResult(req);
@@ -393,7 +393,7 @@ app.patch("/company", companyNameValidation, (req, res) => {
  *             schema:
  *               type: object
  *       500:
- *         description: Could not register
+ *         description: Could not delete company
  */
 app.delete("/company/:id", companyDelValidation, (req, res) => {
   const errors = validationResult(req);
@@ -444,7 +444,7 @@ app.delete("/company/:id", companyDelValidation, (req, res) => {
  *             schema:
  *               type: object
  *       500:
- *         description: Could not register
+ *         description: Could not get customers
  */
 app.get("/customers", (req, res) => {
   getConnection()
@@ -496,7 +496,7 @@ app.get("/customers", (req, res) => {
  *             schema:
  *               type: object
  *       500:
- *         description: Could not register
+ *         description: Could not get customer
  */
 app.get(
   "/customer/:id",
@@ -550,7 +550,7 @@ app.get(
  *             schema:
  *               type: object
  *       500:
- *         description: Could not register
+ *         description: Could not get orders
  */
 app.get("/orders", (req, res) => {
   getConnection()
@@ -604,7 +604,7 @@ app.get("/orders", (req, res) => {
  *             schema:
  *               type: object
  *       500:
- *         description: Could not register
+ *         description: Could not get orders
  */
 app.get(
   "/order",
@@ -682,7 +682,7 @@ app.get(
  *             schema:
  *               type: object
  *       500:
- *         description: Could not register
+ *         description: Could not get orders
  */
 app.get(
   "/order-amount",
@@ -760,7 +760,7 @@ app.get(
  *             schema:
  *               type: object
  *       500:
- *         description: Could not register
+ *         description: Could not get report
  */
 app.get(
   "/students-report",
@@ -847,7 +847,7 @@ app.get(
  *             schema:
  *               type: object
  *       500:
- *         description: Could not register
+ *         description: Could not get agents
  */
 app.get(
   "/agents",
@@ -939,7 +939,7 @@ app.get(
  *             schema:
  *               type: object
  *       500:
- *         description: Could not register
+ *         description: Could not students
  */
 app.get(
   "/student/:class",
@@ -1022,7 +1022,7 @@ app.get(
  *             schema:
  *               type: object
  *       500:
- *         description: Could not register
+ *         description: Could not get company foods
  */
 app.get(
   "/company-foods/:id",

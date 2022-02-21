@@ -106,7 +106,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
  *         WORKING_AREA:
  *           type: string
  *         COMMISSION:
- *           type: string
+ *           type: number
  *         PHONE_NO:
  *           type: string
  *         COUNTRY:
